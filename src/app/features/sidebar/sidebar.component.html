@@ -1,0 +1,44 @@
+<aside class="p-4">
+  <div class="space-y-8 mb-6 mt-10">
+  <span class=" text-xs text-[#CFCFCF]">{{
+    "sidebar.main" | translate
+  }}</span>
+    <section class="flex justify-between w-full">
+      <img src="assets/icons/home.svg" alt="" />
+      <p-dropdown
+        [options]="menu"
+        optionLabel="label"
+        placeholder="{{ 'sidebar.menu1' | translate }}"
+      />
+    </section>
+    <section class="flex justify-between w-full">
+      <img src="assets/icons/home.svg" alt="" />
+      <p-dropdown
+        [options]="menu"
+        optionLabel="label"
+        placeholder="{{ 'sidebar.menu1' | translate }}"
+      />
+    </section>
+    <section class="flex gap-x-6 w-full">
+      <img src="assets/icons/home.svg" alt="" />
+      <span>{{ "sidebar.menu1" | translate }}</span>
+    </section>
+    <section class="flex gap-x-6 w-full">
+      <img src="assets/icons/home.svg" alt="" />
+      <span>{{ "sidebar.menu1" | translate }}</span>
+    </section>
+  </div>
+  <span class="text-xs text-[#CFCFCF]">{{
+    "sidebar.account" | translate
+  }}</span>
+  <div class="space-y-8 mt-6">
+    <section class="flex gap-x-6 w-full">
+      <img src="assets/icons/info.svg" alt="" />
+      <span>{{ "sidebar.help" | translate }}</span>
+    </section>
+    <section class="flex gap-x-6 w-full">
+      <img src="assets/icons/setting.svg" alt="" />
+      <span>{{ "sidebar.setting" | translate }}</span>
+    </section>
+  </div>
+</aside>

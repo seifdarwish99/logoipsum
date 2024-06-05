@@ -1,0 +1,55 @@
+<div class="p-3 space-y-3">
+  <section>
+    <section class="flex justify-between border-b border-dashed pb-5">
+      <div class="gap-x-2 items-center flex">
+        <span class="font-medium text-sm">{{
+          "calender.appCal" | translate
+        }}</span>
+        <div>
+          <i class="pi pi-angle-right text-xs"></i>
+          <i class="pi pi-angle-left text-xs"></i>
+        </div>
+      </div>
+      <div class="w-[35%] flex items-center gap-2 bg-[#F7F6FD] p-2 rounded-md">
+        <i class="pi pi-calendar"></i>
+        <p-calendar
+          disabled="false"
+          placeholder="{{ 'calender.calenderPlaceholder' | translate }}"
+        />
+        <i class="pi pi-angle-down"></i>
+      </div>
+    </section>
+    <section class="pt-5">
+      <p-selectButton
+        [options]="paymentOptions"
+        [multiple]="true"
+        optionLabel="name"
+        optionValue="value"
+      />
+    </section>
+  </section>
+
+  <div class="space-y-3">
+    @for (card of calenderCards; track card) {
+
+    <section class="space-y-4 bg-[{{card.bgColor}}] p-3 rounded-xl">
+      <p class="font-medium text-sm text-[{{ card.col2 }}]">
+        {{ card.text | translate }}
+      </p>
+      <div class="items-center text-[{{ card.col1 }}]">
+        <i class="pi pi-clock text-xs"></i>
+        <span class="mx-2">{{ card.time | translate }}</span>
+      </div>
+      <div class="items-center text-[#76778B] w-full flex justify-between">
+        <section class="flex gap-x-2 items-center">
+          <img src="{{ card.icon }}" alt="" />
+          <span class="text-[{{ card.col2 }}]">{{
+            card.name | translate
+          }}</span>
+        </section>
+        <i class="pi pi-arrow-left py-3 px-4 bg-white rounded-xl text-xs"></i>
+      </div>
+    </section>
+    }
+  </div>
+</div>

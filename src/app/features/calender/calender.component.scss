@@ -1,0 +1,16 @@
+::ng-deep{
+    .p-inputtext{
+        @apply bg-[#F7F6FD] border-0 placeholder:text-xs
+    }
+    .p-selectbutton .p-button {
+        @apply text-xs p-2 border-0 mx-1 rounded-none text-[#B4B4B4];
+
+      }
+    //   .p-selectbutton .p-button.p-highlight{
+    //     background-color: #FEEE00 !important;
+    // color: black !important;
+    //     // @apply bg-[#FEEE00] text-black
+    //   }
+}
+
+  

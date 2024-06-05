@@ -1,0 +1,14 @@
+::ng-deep{
+    .p-inputtext{
+        @apply p-0
+    }
+    .p-dropdown{
+        @apply border-0 flex justify-between w-full;
+        .p-dropdown-label.p-placeholder{
+            @apply text-[#2E2E2E]
+        }
+        .p-dropdown-trigger{
+            @apply text-[#2E2E2E]
+        }
+    }
+}

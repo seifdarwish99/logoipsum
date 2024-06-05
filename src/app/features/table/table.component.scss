@@ -1,0 +1,23 @@
+::ng-deep {
+  .p-selectbutton .p-button {
+    @apply text-xs p-2 border-0 mx-1 rounded-none ;
+  }
+  .p-selectbutton .p-button.p-highlight{
+    // background-color: #2385EA !important;
+    // color: white !important;
+    // @ap
+    @apply bg-[#2385EA] text-white text-xs
+  }
+  .p-paginator .p-dropdown{
+    @apply bg-white border border-[#DDDDDD] items-center h-fit m-0 p-2 gap-x-2 text-xs
+  }
+  .p-dropdown .p-dropdown-trigger{
+    @apply w-fit text-xs
+  }
+  .p-paginator .p-paginator-pages .p-paginator-page{
+    @apply text-xs
+  }
+  .p-paginator .p-paginator-current{
+    @apply text-xs
+  }
+}

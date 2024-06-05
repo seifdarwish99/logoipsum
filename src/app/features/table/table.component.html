@@ -1,0 +1,104 @@
+<div class="flex flex-col h-[90%] space-y-5">
+  <div class="flex justify-between px-3 pt-3">
+    <div class="flex gap-x-3">
+      <img class="w-[48%]" src="assets/icons/chart2.svg" alt="" />
+      <img class="w-[48%]" src="assets/icons/chart1.svg" alt="" />
+    </div>
+    <div class="w-1/3 h-full space-y-3">
+      @for (card of cardsData; track card) {
+
+      <section
+        class=" bg-[{{ card.bgColor }}] text-white space-y-3 p-2 rounded-xl"
+      >
+        <span>{{ "cards.OtherReadings" | translate }}</span>
+        <div class="items-center">
+          <span class="text-lg">{{ card.text | translate }}</span>
+          <i class="pi {{ card.icon }} mx-1"></i>
+        </div>
+      </section>
+      }
+    </div>
+  </div>
+
+  <section class="flex justify-between px-3">
+    <div class="flex gap-x-3">
+      <p-iconField iconPosition="left" class="opacity-40">
+        <p-inputIcon>
+          <i class="pi pi-search"></i>
+        </p-inputIcon>
+        <input
+          class="border border-gray-400 rounded-lg p-3 shadow-none text-center"
+          pInputText
+          type="text"
+          placeholder="Search for"
+        />
+      </p-iconField>
+      <img
+        class="p-3 bg-white rounded-lg border border-[#92A1AD66] border-opacity-40"
+        src="assets/icons/sort.svg"
+        alt=""
+      />
+      <img
+        class="p-3 bg-white rounded-lg border border-[#92A1AD66] border-opacity-40"
+        src="assets/icons/adjust.svg"
+        alt=""
+      />
+    </div>
+    <button class="bg-[#FEEE00] py-1 px-6 rounded-xl">+ add new</button>
+  </section>
+  <div class="px-3">
+    <p-table
+      [value]="products"
+      paginator="true"
+      [rows]="5"
+      [tableStyle]="{ 'min-width': '50rem' }"
+      [rowsPerPageOptions]="[5, 10, 20]"
+      [showCurrentPageReport]="true"
+      currentPageReportTemplate="{{ 'table.pageReport' | translate }}"
+    >
+      <ng-template pTemplate="header">
+        <tr class="text-xs">
+          <th class="text-center text-[#5A5A67]">
+            {{ "table.ID" | translate }}
+          </th>
+          <th class="text-center text-[#5A5A67]">
+            {{ "table.NAME" | translate }}
+          </th>
+          <th class="text-center text-[#5A5A67]">
+            {{ "table.MAIL" | translate }}
+          </th>
+          <th class="text-center text-[#5A5A67]">
+            {{ "table.WorkingDays" | translate }}
+          </th>
+          <th class="text-center text-[#5A5A67]">
+            {{ "table.user" | translate }}
+          </th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-product>
+        <tr class="text-xs">
+          <td class="text-[#99A1B7]">{{ product.id }}</td>
+          <td class="text-[#1C1C28]">{{ product.name }}</td>
+          <td class="text-[#1C1C28]">{{ product.mail }}</td>
+          <td>
+            <div>
+              <p-selectButton
+                [options]="paymentOptions"
+                [multiple]="true"
+                optionLabel="name"
+                optionValue="value"
+              />
+            </div>
+          </td>
+          <td class="flex gap-x-3">
+            <img src="assets/icons/user.svg" alt="" />
+            <article class="text-right">
+              <span class="text-black">userInterface.png</span>
+              <p class="text-[#000000] opacity-40">9mb</p>
+            </article>
+          </td>
+        </tr>
+      </ng-template>
+    </p-table>
+  </div>
+</div>

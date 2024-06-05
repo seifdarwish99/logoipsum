@@ -1,0 +1,39 @@
+{
+  "sidebar": {
+    "main": "الرئيسية",
+    "menu1": "منيو رقم 1",
+    "miniMenu": "منيو ميني",
+    "account": "الحساب",
+    "help": "المساعدة",
+    "setting": "الإعدادات"
+  },
+  "table": {
+    "ID": "رقم ال id",
+    "NAME": "الاسم",
+    "MAIL": "البريد الالكتروني",
+    "WorkingDays": "ايام العمل",
+    "user": "واجهة المستخدم",
+    "day1": "س",
+    "day2": "ج",
+    "day3": "ث",
+    "day4": "ح",
+    "day5": "خ",
+    "pageReport":"عرض {first} الي {last} من اصل {totalRecords}"
+  },
+  "cards": {
+    "OtherReadings": "قراءات تانية",
+    "NAME": "Name",
+    "MAIL": "Mail",
+    "WorkingDays": "Working days"
+  },
+  "calender": {
+    "cardText": "هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى",
+    "name1": "سيف درويش",
+    "name2": "ميرا حسين",
+    "name3": "محمود غريب",
+    "name4": "كريم عبدالعزيز",
+    "time":"04:00 - 05:00 م",
+    "calenderPlaceholder":"مارس 2023",
+    "appCal":"تقويم المواعيد"
+  }
+}

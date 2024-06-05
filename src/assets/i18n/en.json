@@ -1,0 +1,40 @@
+{
+  "sidebar": {
+    "main": "main",
+    "menu1": "menu 1",
+    "miniMenu": "mini menu",
+    "account": "Account",
+    "help" : "Help",
+    "setting": "Setting"
+  },
+  "table" : {
+    "ID": "ID",
+    "NAME": "Name",
+    "MAIL" : "Mail",
+    "WorkingDays": "Working days",
+    "user": "user interface",
+    "day1":"S",
+    "day2":"F",
+    "day3":"D",
+    "day4":"W",
+    "day5":"S",
+    "pageReport":"Showing {first} to {last} of {totalRecords} entries"
+    
+  },
+  "cards" : {
+    "OtherReadings": "Other readings",
+    "NAME": "Name",
+    "MAIL" : "Mail",
+    "WorkingDays": "Working days"
+  },
+  "calender":{
+    "cardText":"There is a long-established fact that content",
+    "name1":"Seif Darwish",
+    "name2":"Mera hussein",
+    "name3":"Mahmoud Gharib",
+    "name4":"karim aziz",
+    "time":"05:00 - 06:00 PM",
+    "calenderPlaceholder":"March 2023",
+    "appCal":"Appointment calendar"
+  }
+}
